@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Nexone Clinic | Complete Clinic Management & EHR System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    body { background: #fefefe; }
+    .gradient-bg { background: linear-gradient(135deg, #0f5ea8 0%, #1b76c8 100%); }
+    .gradient-text { background: linear-gradient(135deg, #0f5ea8, #1b76c8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15); }
+    .pricing-card { transition: all 0.3s ease; }
+    .pricing-card:hover { transform: scale(1.02); box-shadow: 0 20px 30px -10px rgba(15,94,168,0.2); }
+    .btn-primary { background: linear-gradient(105deg, #0f5ea8, #1b76c8); transition: all 0.2s; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(15,94,168,0.3); }
+    .btn-outline { border: 1px solid #cbd5e1; transition: all 0.2s; }
+    .btn-outline:hover { background: #f1f5f9; border-color: #0f5ea8; }
+    .feature-icon { background: #eef2ff; border-radius: 20px; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; transition: all 0.2s; }
+    .feature-icon i { font-size: 28px; color: #0f5ea8; }
+    .trust-badge { background: #f8fafc; border-radius: 60px; padding: 0.5rem 1.2rem; display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 500; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeUp { animation: fadeUp 0.6s ease-out forwards; }
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    /* mockup styles */
+    .mockup-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+      border: 1px solid #e9edf2;
+      overflow: hidden;
+    }
+    .mockup-header {
+      background: #f8fafc;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #e9edf2;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .mockup-dot { width: 12px; height: 12px; border-radius: 50%; background: #cbd5e1; }
+    .mockup-content { padding: 1rem; }
+    .stat-mock { background: #f1f5f9; border-radius: 12px; padding: 0.75rem; font-size: 0.85rem; }
+    .form-mock { background: #f8fafc; border-radius: 16px; padding: 0.75rem; border: 1px solid #e2e8f0; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section with live dashboard mockup -->
+  <section class="relative overflow-hidden bg-white pt-12 pb-20 lg:pt-20">
+    <div class="absolute inset-0 -z-10 opacity-30">
+      <div class="absolute top-0 left-1/3 w-96 h-96 bg-blue-100 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-indigo-100 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1 text-center lg:text-left animate-fadeUp">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+            Complete Clinic <span class="gradient-text">Management & EHR</span> System
+          </h1>
+          <p class="mt-6 text-lg text-gray-600 max-w-xl lg:mx-0 mx-auto">
+            Manage patients, reports, billing and staff — all in one simple software. 
+            Digitize your clinic today.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
+            <a href="#demo" class="btn-primary text-white px-6 py-3 rounded-full font-semibold shadow-lg inline-flex items-center gap-2">
+              <i class="fas fa-calendar-check"></i> Get Free Demo
+            </a>
+            <a href="https://wa.me/923001234567?text=Hi%20Nexone%20Clinic%2C%20I%20want%20a%20demo" target="_blank" class="border border-gray-300 bg-white text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-50 transition inline-flex items-center gap-2">
+              <i class="fab fa-whatsapp text-green-600"></i> Contact on WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 animate-fadeUp delay-100">
+          <!-- Dashboard Mockup (mirrors your actual CMS dashboard) -->
+          <!-- <div class="mockup-card mx-auto max-w-md lg:max-w-lg"> -->
+            <img src="./dashboard.png" alt="Nexone Clinic Dashboard" class="w-full rounded-t-2xl">
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem & Solution (unchanged) -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Still managing your clinic manually?</h2>
+        <p class="mt-4 text-gray-600 text-lg">Paper‑based systems create hidden costs and frustration every single day.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"><i class="fas fa-folder-open text-red-600 text-2xl mb-3 block"></i><h3 class="font-bold">Lost patient records</h3><p class="text-gray-500 mt-2">Handwritten files get misplaced, delaying treatment.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"><i class="fas fa-file-alt text-amber-600 text-2xl mb-3 block"></i><h3 class="font-bold">Report delays</h3><p class="text-gray-500 mt-2">Lab & prescription management takes hours.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"><i class="fas fa-calculator text-blue-600 text-2xl mb-3 block"></i><h3 class="font-bold">Billing errors</h3><p class="text-gray-500 mt-2">Manual invoices cause revenue leakage.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"><i class="fas fa-clock text-purple-600 text-2xl mb-3 block"></i><h3 class="font-bold">Time waste</h3><p class="text-gray-500 mt-2">2+ hours daily on admin tasks.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution + EHR Workflow (with visual) -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-blue-600 font-semibold text-sm uppercase tracking-wider">⚡ Modern solution</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900">Nexone Clinic makes everything easy</h2>
+          <ul class="mt-8 space-y-4">
+            <li class="flex gap-3"><i class="fas fa-check-circle text-green-500 mt-1"></i> <span><strong>Digital patient records</strong><br>Full history & access in seconds.</span></li>
+            <li class="flex gap-3"><i class="fas fa-check-circle text-green-500 mt-1"></i> <span><strong>Instant report generation</strong><br>Professional printable reports.</span></li>
+            <li class="flex gap-3"><i class="fas fa-check-circle text-green-500 mt-1"></i> <span><strong>Smart billing system</strong><br>Auto‑calculate, track daily revenue.</span></li>
+            <li class="flex gap-3"><i class="fas fa-check-circle text-green-500 mt-1"></i> <span><strong>Multi‑role support</strong><br>Admin, reception, doctor, lab, pharmacy.</span></li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-br from-blue-50 to-white p-4 rounded-3xl shadow-xl">
+          <!-- EHR Workflow mockup -->
+          <div class="flex flex-wrap justify-center gap-4">
+            <div class="text-center"><div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto"><i class="fas fa-user-md text-blue-600 text-xl"></i></div><p class="text-xs mt-2">Doctor</p></div>
+            <i class="fas fa-arrow-right text-gray-400 self-center"></i>
+            <div class="text-center"><div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto"><i class="fas fa-flask text-blue-600 text-xl"></i></div><p class="text-xs mt-2">Lab</p></div>
+            <i class="fas fa-arrow-right text-gray-400 self-center"></i>
+            <div class="text-center"><div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto"><i class="fas fa-file-invoice-dollar text-blue-600 text-xl"></i></div><p class="text-xs mt-2">Billing</p></div>
+            <i class="fas fa-arrow-right text-gray-400 self-center"></i>
+            <div class="text-center"><div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto"><i class="fas fa-chart-line text-blue-600 text-xl"></i></div><p class="text-xs mt-2">Reports</p></div>
+          </div>
+          <p class="text-center text-gray-600 text-sm mt-4">Seamless end‑to‑end EHR workflow</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Cards (unchanged) -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center"><h2 class="text-3xl md:text-4xl font-bold text-gray-900">Everything you need</h2></div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div class="bg-white p-6 rounded-2xl shadow-sm card-hover"><div class="feature-icon"><i class="fas fa-users"></i></div><h3 class="text-xl font-bold">Patient Management</h3><p class="text-gray-500">Centralized registry with complete history.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm card-hover"><div class="feature-icon"><i class="fas fa-flask"></i></div><h3 class="text-xl font-bold">Lab & Reports</h3><p class="text-gray-500">Integrated LIMS, track results.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm card-hover"><div class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></div><h3 class="text-xl font-bold">Smart Billing</h3><p class="text-gray-500">Invoice, credit notes, revenue tracking.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm card-hover"><div class="feature-icon"><i class="fas fa-user-md"></i></div><h3 class="text-xl font-bold">Doctor Management</h3><p class="text-gray-500">Profiles, schedule, consultation fees.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm card-hover"><div class="feature-icon"><i class="fas fa-notes-medical"></i></div><h3 class="text-xl font-bold">EHR Records</h3><p class="text-gray-500">Secure electronic health records.</p></div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm card-hover"><div class="feature-icon"><i class="fas fa-chart-line"></i></div><h3 class="text-xl font-bold">Daily Reports</h3><p class="text-gray-500">Analytics dashboard, revenue charts.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works (3 steps) unchanged -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center"><h2 class="text-3xl md:text-4xl font-bold">Get started in 3 steps</h2>
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <div><div class="bg-blue-50 w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold text-blue-700 mx-auto">1</div><h3 class="mt-4 font-semibold">Setup your clinic</h3><p class="text-gray-500">Add staff, roles, categories.</p></div>
+        <div><div class="bg-blue-50 w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold text-blue-700 mx-auto">2</div><h3 class="mt-4 font-semibold">Add patients & tests</h3><p class="text-gray-500">Register, schedule, upload catalog.</p></div>
+        <div><div class="bg-blue-50 w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold text-blue-700 mx-auto">3</div><h3 class="mt-4 font-semibold">Generate reports instantly</h3><p class="text-gray-500">Bills, medical reports, analytics.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing (unchanged with enhanced Standard/Premium) -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center"><h2 class="text-3xl md:text-4xl font-bold">Transparent daily pricing</h2></div>
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <div class="bg-white rounded-2xl shadow-md p-6 pricing-card"><h3 class="text-xl font-bold">Basic</h3><div class="mt-4"><span class="text-4xl font-extrabold">250</span> <span class="text-gray-500">PKR / day</span></div><ul class="mt-6 space-y-2 text-gray-600"><li><i class="fas fa-check text-green-500"></i> up to 3 doctors</li><li><i class="fas fa-check"></i> 500 patients</li><li><i class="fas fa-times text-red-400"></i> No LIMS/pharmacy</li><li>Email support</li></ul><div class="mt-8"><a href="#demo" class="btn-outline block text-center py-2 rounded-full">Get Basic</a></div></div>
+        <div class="bg-white rounded-2xl shadow-xl ring-2 ring-blue-600 p-6 pricing-card relative"><div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full">🔥 MOST POPULAR</div><h3 class="text-xl font-bold">Standard</h3><div class="mt-4"><span class="text-4xl font-extrabold">350</span> <span class="text-gray-500">PKR / day</span></div><ul class="mt-6 space-y-2 text-gray-600"><li><i class="fas fa-check"></i> Unlimited doctors & patients</li><li><i class="fas fa-check"></i> Full EHR + LIMS + Pharmacy</li><li><i class="fas fa-check"></i> Full time maintenance</li><li><i class="fas fa-check"></i> Free upgrades anytime</li><li><i class="fas fa-check"></i> Priority WhatsApp support</li></ul><div class="mt-8"><a href="#demo" class="btn-primary text-white block text-center py-2 rounded-full">Get Standard</a></div></div>
+        <div class="bg-white rounded-2xl shadow-md p-6 pricing-card"><h3 class="text-xl font-bold">Premium</h3><div class="mt-4"><span class="text-4xl font-extrabold">600</span> <span class="text-gray-500">PKR / day</span></div><ul class="mt-6 space-y-2 text-gray-600"><li><i class="fas fa-check"></i> Everything in Standard</li><li><i class="fas fa-check"></i> Advanced reports & analytics</li><li><i class="fas fa-check"></i> Custom features on demand</li><li><i class="fas fa-check"></i> Multi-branch support</li><li><i class="fas fa-check"></i> WhatsApp report sharing + QR code access</li></ul><div class="mt-8"><a href="#demo" class="btn-outline block text-center py-2 rounded-full">Contact sales</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo / Screenshots Section with LIVE mockups (no external images) -->
+  <section id="demo" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">See Nexone Clinic in action</h2>
+      <p class="text-gray-600 mt-2">Live previews of dashboard, patient form, and medical report</p>
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <!-- Mockup 1: Dashboard view -->
+        <div class="mockup-card">
+          <img src="./dashboard.png" alt="">
+        </div>
+        <!-- Mockup 2: Patient Form -->
+        <div class="mockup-card">
+          <div class="mockup-header"><span class="text-xs font-medium">Patient Registration</span></div>
+          <div class="mockup-content">
+            <div class="form-mock"><i class="fas fa-user text-gray-400"></i> <span class="text-sm ml-2">John Doe</span></div>
+            <div class="form-mock"><i class="fas fa-phone text-gray-400"></i> <span class="text-sm ml-2">+92 3358433067</span></div>
+            <div class="form-mock"><i class="fas fa-calendar text-gray-400"></i> <span class="text-sm ml-2">Age: 45</span></div>
+            <div class="text-right mt-2"><span class="text-xs bg-blue-100 px-2 py-1 rounded-full">New patient</span></div>
+          </div>
+        </div>
+        <!-- Mockup 3: Medical Report -->
+        <div class="mockup-card">
+          <div class="mockup-header"><span class="text-xs font-medium">Medical Report</span></div>
+          <div class="mockup-content">
+            <div class="border-b pb-1 mb-1"><span class="font-semibold">Diagnosis:</span> Hypertension</div>
+            <div class="text-sm">💊 Prescriptions: Lisinopril 10mg</div>
+            <div class="text-sm">🔬 Lab tests: Lipid profile, ECG</div>
+            <div class="mt-2 text-xs text-green-600">✔ Report ready to print / share</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & CTA (unchanged) -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-wrap justify-center gap-6">
+      <div class="trust-badge"><i class="fas fa-hospital-user"></i> Used by 50+ clinics</div>
+      <div class="trust-badge"><i class="fas fa-shield-alt"></i> Secure & encrypted</div>
+      <div class="trust-badge"><i class="fas fa-smile-wink"></i> Easy to use</div>
+      <div class="trust-badge"><i class="fas fa-headset"></i> 24/7 support</div>
+    </div>
+  </section>
+
+  <section class="gradient-bg py-16 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold">Ready to digitize your clinic?</h2>
+      <p class="mt-3">Join hundreds of clinics that saved 15+ hours per week.</p>
+      <div class="flex flex-wrap gap-4 justify-center mt-8">
+        <a href="https://wa.me/923358433067" target="_blank" class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold shadow-md inline-flex items-center gap-2"><i class="fab fa-whatsapp text-green-600"></i> WhatsApp Now</a>
+        <a href="#demo" class="border border-white bg-transparent px-6 py-3 rounded-full font-semibold inline-flex items-center gap-2"><i class="fas fa-calendar-alt"></i> Book Free Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer unchanged -->
+  <footer class="bg-white border-t py-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-4 gap-8">
+      <div><i class="fas fa-stethoscope text-blue-600 text-xl"></i><span class="font-bold text-xl ml-2">Nexone Clinic</span><p class="text-gray-500 text-sm mt-2">Complete clinic management & EHR platform.</p></div>
+      <div><h4 class="font-semibold">Contact</h4><ul class="mt-2 text-sm text-gray-600"><li><i class="fas fa-phone-alt"></i> +92 3358433067</li><li><i class="fab fa-whatsapp"></i> +92 3358433067</li><li><i class="fas fa-envelope"></i> nexonez64@gmail.com</li></ul></div>
+      <div><h4 class="font-semibold">Quick links</h4><ul class="mt-2 text-sm"><li><a href="#" class="text-gray-600">Features</a></li><li><a href="#" class="text-gray-600">Pricing</a></li><li><a href="#" class="text-gray-600">Demo</a></li></ul></div>
+      <div><h4 class="font-semibold">Legal</h4><p class="text-gray-500 text-sm">© 2026 Nexone Clinic. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/923358433067?text=Free%20demo%20please" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition z-50 flex items-center gap-2 text-sm"><i class="fab fa-whatsapp text-xl"></i> Free Demo</a>
+</body>
+</html>
